@@ -1,0 +1,48 @@
+.container{
+	display: flex;
+	flex-direction: row;
+}
+
+h3{
+	position: absolute;
+	color: white;
+	margin: 25px;
+	white-space: nowrap;
+	margin-top: 40%;
+}
+
+/* .panel{
+	padding-right: 30px;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    cursor: pointer;
+    flex: 0.2;
+    margin:8px;
+    position: relative;
+    transition: all 0.7s ease-out;
+	
+} */
+
+.hello{
+	margin: 15px;
+	border-radius: 60px;
+	width: 150px;
+	height: 60vh;
+}
+
+
+.active{
+    margin: 15px;
+	border-radius: 60px;
+	width: 700px;
+	height: 60vh;
+	transition: all 0.7s ease-in;
+}
+
+
+
+
+
+

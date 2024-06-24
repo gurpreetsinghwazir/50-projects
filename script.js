@@ -1,22 +1,24 @@
-let getRadius = document.getElementById("radius");
-let calculate = document.getElementById("submit");
-let volume = document.getElementById("volume");
+let sections = document.querySelectorAll("img");
+console.log(sections.value);
 
-calculate.addEventListener("click", display);
 
-function display(event) {
-  event.preventDefault();
+sections.forEach(section => {
+    section.addEventListener('click', display);
+});
 
-  let radius = parseFloat(getRadius.value);
 
-  console.log("Radius:", radius);
 
-  if (radius <= 0) {
-    volume.value = "NaN";
-  } else {
-    let calVolume = (4 / 3) * Math.PI * Math.pow(radius, 3);
-    volume.value = calVolume.toFixed(4);
-  }
 
-  console.log("Volume:", volume.value);
-}
+
+	// remove active class from all another section 
+	// and add it to the selected section
+	
+	function display(event) {
+		// Remove active class from all other sections
+		sections.forEach(section => {
+			section.classList.remove('hello');
+		});
+	
+		// Add active class to the clicked section
+		event.target.classList.add('active');
+	}
